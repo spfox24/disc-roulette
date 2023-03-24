@@ -1,11 +1,10 @@
 import { HStack, Image, Text } from "@chakra-ui/react";
-import logo from "../assets/KVAMP.png";
+import logo from "../assets/Disc.png";
 
 const NavBar = () => {
   return (
-    <HStack>
-      <Image src={logo} boxSize="60px" />
-      <Text>Disc Roulette</Text>
+    <HStack justifyContent="center">
+      <Image src={logo} boxSize="150px" />
     </HStack>
   );
 };
