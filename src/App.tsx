@@ -1,14 +1,25 @@
 import { Grid, GridItem, HStack } from "@chakra-ui/react";
-import DiscType from "./components/DiscType";
+import { useState } from "react";
+import MainWrapper from "./components/MainWrapper";
 import NavBar from "./components/NavBar";
-import ShuffleButton from "./components/ShuffleButton";
+import RandomizeTest from "./components/RandomizeTest";
+import { Disc } from "./hooks/useDiscType";
+
+export interface DiscQuery {
+  disc: Disc | null;
+}
 
 function App() {
+  const [discQuery, setDiscQuery] = useState<DiscQuery>({} as DiscQuery);
+
   return (
     <Grid
       templateAreas={{
         base: `"nav" "main"`,
         lg: `"nav nav" "main"`,
+      }}
+      templateColumns={{
+        base: "1fr",
       }}
     >
       <GridItem area="nav">
@@ -16,8 +27,7 @@ function App() {
       </GridItem>
       <HStack justifyContent="center">
         <GridItem area="main">
-          <DiscType />
-          <ShuffleButton />
+          <MainWrapper />
         </GridItem>
       </HStack>
     </Grid>

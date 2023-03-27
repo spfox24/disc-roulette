@@ -1,12 +1,12 @@
 import { Heading, Flex, Text, Box, Card, CardBody } from "@chakra-ui/react";
 
-const DiscType = () => {
-  const discType = [
-    "Overstable",
-    "Understable",
-    "Driver",
-    "Mid",
-    "Putter",
+const ThrowType = () => {
+  const throwType = [
+    "Backhand",
+    "Forehand",
+    "Hyzer",
+    "Anhyzer",
+    "Roller",
     "You Choose",
   ];
 
@@ -19,15 +19,14 @@ const DiscType = () => {
     return arr;
   };
 
-  const newDiscType = shuffle(discType);
-
+  const newThrowType = shuffle(throwType);
   return (
     <>
       <Box width={250} margin={2}>
         <Flex flexDirection="column">
           <Box display="flex" justifyContent="center">
             <Heading fontSize="3xl" marginBottom={5}>
-              Disc
+              Throw
             </Heading>
           </Box>
           <Card align="center" height={200} width={200}>
@@ -38,7 +37,7 @@ const DiscType = () => {
                 marginTop="55px"
                 textAlign="center"
               >
-                {newDiscType[0]}
+                {newThrowType[0]}
               </Text>
             </CardBody>
           </Card>
@@ -48,4 +47,4 @@ const DiscType = () => {
   );
 };
 
-export default DiscType;
+export default ThrowType;
