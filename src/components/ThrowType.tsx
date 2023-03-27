@@ -22,7 +22,7 @@ const ThrowType = () => {
   const newThrowType = shuffle(throwType);
   return (
     <>
-      <Box width={250} margin={2}>
+      <Box width={200}>
         <Flex flexDirection="column">
           <Box display="flex" justifyContent="center">
             <Heading fontSize="3xl" marginBottom={5}>

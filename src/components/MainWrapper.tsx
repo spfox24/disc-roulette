@@ -10,8 +10,7 @@ const MainWrapper = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        width={400}
-        height={600}
+        padding="10px"
       >
         <HStack marginBottom={5} justifyContent="center">
           <DiscType />
