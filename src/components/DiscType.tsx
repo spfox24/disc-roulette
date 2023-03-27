@@ -30,13 +30,13 @@ const DiscType = () => {
               Disc
             </Heading>
           </Box>
-          <Card align="center" height={200} width={200}>
+          <Card align="center">
             <CardBody>
               <Text
                 fontSize="2xl"
                 fontWeight="bold"
-                marginTop="55px"
                 textAlign="center"
+                color="red.500"
               >
                 {newDiscType[0]}
               </Text>
